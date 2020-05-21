@@ -67,3 +67,21 @@ function lookUpProfile(name, prop) {
 function generateWholeNumbers(min, max) {
    return Math.floor(Math.random() * (max - min + 1) + min);
 }
+
+function removeWithSplice(input1, input2) {
+   list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+   list.splice(input1, input2);
+   return list;
+}
+
+function removeWithSplice(input1, input2) {
+   list = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+   list.splice(input1, input2);
+   return list;
+}
+
+function addWithSplice(input1, input2, input3) {
+   list = [1, 2, 3, 4, 5, 5, 7, 8, 9];
+   list.splice(input1, input2, input3);
+   return list;
+}
