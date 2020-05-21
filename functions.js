@@ -85,3 +85,11 @@ function addWithSplice(input1, input2, input3) {
    list.splice(input1, input2, input3);
    return list;
 }
+
+function checkUsingIndexOf(item) {
+   list = ["kirin", "corona", "modelo", "sapporo", "pabst", "stella"];
+   if (list.indexOf(item) >= 0) {
+      return "yes";
+   }
+   return "no";
+}
