@@ -33,7 +33,11 @@
                   </p>
                   <pre style="display: none;"><code></code></pre>
                   <div class="actions float-right">
-                     <input type="text" class="form-control inline-action" />
+                     <input
+                        type="text"
+                        class="form-control inline-action"
+                        placeholder="input card"
+                     />
                      <button class="btn btn-primary inline-action">
                         Run
                      </button>
@@ -47,13 +51,53 @@
                <!-- LOOK UP PROFILE -->
                <div class="col-12 col-lg-8 offset-lg-2 mb-5">
                   <p class="name">
-                     <b>lookUpProfile</b> - Hold or Bet depending on the card
-                     input
+                     <b>lookUpProfile</b> - Look at the list of name and
+                     properties. Find out someones profile by putting in a first
+                     name and then a property. <br />
+                     NAMES: Tatsuro, Jim, Nat, Sante, <br />PROPERTIES:
+                     lastName, number, likes
                   </p>
                   <pre style="display: none;"><code></code></pre>
                   <div class="actions float-right">
-                     <input type="text" class="form-control inline-action" />
-                     <input type="text" class="form-control inline-action" />
+                     <input
+                        type="text"
+                        class="form-control inline-action"
+                        placeholder="name"
+                     />
+                     <input
+                        type="text"
+                        class="form-control inline-action"
+                        placeholder="property"
+                     />
+                     <button class="btn btn-primary inline-action">
+                        Run
+                     </button>
+                  </div>
+                  <div class="clearfix mb-3"></div>
+                  <div class="alert alert-primary" style="display: none;"></div>
+                  <div class="alert alert-danger" style="display: none;"></div>
+               </div>
+               <!-- end column -->
+
+               <!-- RANDOM NUMBER WITHIN RANG -->
+               <div class="col-12 col-lg-8 offset-lg-2 mb-5">
+                  <p class="name">
+                     <b>generateWholeNumbers</b> - give a minimun and maximun
+                     value and click run to generate a whole number between
+                     those values
+                  </p>
+                  <pre style="display: none;"><code></code></pre>
+                  <div class="actions float-right">
+                     <input
+                        type="text"
+                        class="form-control inline-action"
+                        placeholder="min"
+                     />
+                     <input
+                        type="text"
+                        class="form-control inline-action"
+                        placeholder="max"
+                     />
                      <button class="btn btn-primary inline-action">
                         Run
                      </button>

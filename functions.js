@@ -1,6 +1,6 @@
 //counting cards
 function countCards(card) {
-   //var count = 0;
+   var count = 0;
    switch (card) {
       case 2:
       case 3:
@@ -18,37 +18,52 @@ function countCards(card) {
          break;
    }
    if (count > 0) {
-      return "Bet";
+      return count + " Bet";
    } else {
-      return "Hold";
+      return count + " Hold";
    }
 }
-function lookUpProfile(name, profile) {
-   let contacts = [
-      {
-        "firstName": "Tatsuro",
-        "lastName": "Yamashita",
-        "number": "27323025",
-        "likes": ["flowers", "nature", "animals"]
-      },
-      {
-        "firstName": "",
-        "lastName": "Laine",
-        "number": "12191871",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-      }
-      {
-        "firstName": "Akira",
-        "lastName": "Laine",
-        "number": "3171438",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-      }
-      {
-        "firstName": "Akira",
-        "lastName": "Laine",
-        "number": "5003299868",
-        "likes": ["Pizza", "Coding", "Brownie Points"]
-      }
-   ];
 
+//looking up profiles of people based on name input
+
+var contacts = [
+   {
+      firstName: "Tatsuro",
+      lastName: "Yamashita",
+      number: "27323025",
+      likes: [" flowers", " nature", " animals"],
+   },
+   {
+      firstName: "Jim",
+      lastName: "Baker",
+      number: "12191871",
+      likes: [" business", " evading taxes", " guns"],
+   },
+   {
+      firstName: "Nat",
+      lastName: "Peterson",
+      number: "3171438",
+      likes: [" Pizza", " Coding", " cooking"],
+   },
+   {
+      firstName: "sante",
+      lastName: "PC",
+      number: "5003299868",
+      likes: [" eyes", " computers", " vitamin B12"],
+   },
+];
+
+function lookUpProfile(name, prop) {
+   for (var i = 0; i < contacts.length; i++) {
+      if (contacts[i].firstName === name) {
+         if (prop in contacts[i]) {
+            return contacts[i][prop];
+         } else return "No such property";
+      }
+   }
+   return "no such contact";
+}
+
+function generateWholeNumbers(min, max) {
+   return Math.floor(Math.random() * (max - min + 1) + min);
 }
