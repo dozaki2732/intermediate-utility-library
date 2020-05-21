@@ -93,3 +93,7 @@ function checkUsingIndexOf(item) {
    }
    return "no";
 }
+
+function typeOfVariable(input) {
+   return typeof input;
+}
